@@ -1,0 +1,33 @@
+<mat-sidenav-container>
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="0">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">
+                    home
+                </i>
+                INÍCIO
+            </a>
+            <a mat-list-item routerLink="/products">
+                <i class="material-icons">
+                    description
+                </i>
+                POSTAGENS
+            </a>
+            <a mat-list-item routerLink="/albuns">
+                <i class="material-icons">
+                    book
+                </i>
+                ÁLBUNS
+            </a>
+            <a mat-list-item routerLink="/todos">
+                <i class="material-icons">
+                    offline_pin
+                </i>
+                TO-DOs
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
